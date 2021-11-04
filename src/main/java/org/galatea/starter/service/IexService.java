@@ -5,10 +5,12 @@ import java.util.List;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.galatea.starter.domain.IexHistoricalPrice;
 import org.galatea.starter.domain.IexLastTradedPrice;
 import org.galatea.starter.domain.IexSymbol;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
+
 
 /**
  * A layer for transformation, aggregation, and business required when retrieving data from IEX.
@@ -17,6 +19,8 @@ import org.springframework.util.CollectionUtils;
 @Service
 @RequiredArgsConstructor
 public class IexService {
+
+  /// private static String IEX_TOKEN = pk_57ade5b7c56f49929e9666c89eeeb170
 
   @NonNull
   private IexClient iexClient;
@@ -45,5 +49,23 @@ public class IexService {
     }
   }
 
-
+  /**
+   * Get the historical price for a symbol.
+   * Define required parameters
+   */
+  public List<IexHistoricalPrice> getHistoricalPriceForSymbols(
+      final String symbol,
+      final String range,
+      final String date,
+      final String token) {
+    if (CollectionUtils.isEmpty(Collections.singleton(symbol))) {
+      return Collections.emptyList();
+    } else {
+      return iexClient.getHistoricalPriceForSymbols(symbol, range, date,
+          "pk_57ade5b7c56f49929e9666c89eeeb170");
+    }
+  }
 }
+
+
+
