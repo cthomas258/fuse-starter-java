@@ -1,0 +1,27 @@
+{
+  "id" : "8fd6d6a2-9a17-46af-8718-a974155b8022",
+  "name" : "stock_fb_chart_5d",
+  "request" : {
+    "url" : "/stock/FB/chart/5d/?token=pk_57ade5b7c56f49929e9666c89eee",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "jsonBody" : [{"close":329.98,"high":333.45,"low":326,"open":326.04,"symbol":"FB","volume":31518885,"id":"HISTORICAL_PRICES","key":"FB","subkey":"","date":"2021-11-01","updated":1635816368000,"changeOverTime":0,"marketChangeOverTime":0,"uOpen":326.04,"uClose":329.98,"uHigh":333.45,"uLow":326,"uVolume":31518885,"fOpen":326.04,"fClose":329.98,"fHigh":333.45,"fLow":326,"fVolume":31518885,"label":"Nov 1, 21","change":0,"changePercent":0},{"close":328.08,"high":334.7895,"low":323.8,"open":331.38,"symbol":"FB","volume":28352966,"id":"HISTORICAL_PRICES","key":"FB","subkey":"","date":"2021-11-02","updated":1635908117000,"changeOverTime":-0.00575792472271057,"marketChangeOverTime":-0.00575792472271057,"uOpen":331.38,"uClose":328.08,"uHigh":334.7895,"uLow":323.8,"uVolume":28352966,"fOpen":331.38,"fClose":328.08,"fHigh":334.7895,"fLow":323.8,"fVolume":28352966,"label":"Nov 2, 21","change":-1.900000000000034,"changePercent":-0.0058},{"close":331.62,"high":332.15,"low":323.2,"open":327.49,"symbol":"FB","volume":20786502,"id":"HISTORICAL_PRICES","key":"FB","subkey":"","date":"2021-11-03","updated":1635988049000,"changeOverTime":0.004969998181707941,"marketChangeOverTime":0.004969998181707941,"uOpen":327.49,"uClose":331.62,"uHigh":332.15,"uLow":323.2,"uVolume":20786502,"fOpen":327.49,"fClose":331.62,"fHigh":332.15,"fLow":323.2,"fVolume":20786502,"label":"Nov 3, 21","change":3.5400000000000205,"changePercent":0.0108}],
+    "headers" : {
+      "Server" : "nginx",
+      "Date" : "Thu, 04 Nov 2021 19:45:17 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Set-Cookie" : "ctoken=be9ff15f973543319d4b3c9dc62f0ac6; Max-Age=43200; Path=/; Expires=Fri, 05 Nov 2021 07:45:17 GMT",
+      "iexcloud-messages-used" : "31",
+      "iexcloud-credits-used" : "31",
+      "iexcloud-premium-messages-used" : "0",
+      "iexcloud-premium-credits-used" : "0",
+      "X-Content-Type-Options" : "nosniff",
+      "Strict-Transport-Security" : "max-age=15768000"
+    }
+  },
+  "uuid" : "8fd6d6a2-9a17-46af-8718-a974155b8022",
+  "persistent" : true,
+  "insertionIndex" : 1
+}
