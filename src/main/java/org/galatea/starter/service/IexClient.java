@@ -43,5 +43,6 @@ public interface IexClient {
       @PathVariable("symbol") String symbol,
       @PathVariable("range") String range,
       @PathVariable("date") String date,
-      @RequestParam(value = "token") String token);
+      @RequestParam(value = "token") String token,
+      @RequestParam(value = "chartByDay") String ChartByDay);
 }

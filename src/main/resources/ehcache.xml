@@ -16,4 +16,7 @@
     timeToLiveSeconds="1200" overflowToDisk="false"
     memoryStoreEvictionPolicy="LRU" />
 
+  <cache name="HistoricalPrice" maxElementsInMemory="16384"
+    timeToLiveSeconds="1200" overflowToDisk="false"
+    memoryStoreEvictionPolicy="LRU" />
 </ehcache>
