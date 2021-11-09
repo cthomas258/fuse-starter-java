@@ -24,9 +24,7 @@ public class IexService {
   @Value("${apiKey}")
   private String apiKey;
 
-  /// private static String IEX_TOKEN = pk_57ade5b7c56f49929e9666c89eeeb170
-
-  @NonNull
+   @NonNull
   private IexClient iexClient;
 
 
