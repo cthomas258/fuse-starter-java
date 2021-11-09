@@ -54,7 +54,7 @@ public class IexService {
 
   /**
    * Get the historical price for a symbol.
-   * Define required parameters
+   * Define required parameters. word
    */
 
   public List<IexHistoricalPrice> getHistoricalPriceForSymbols(
